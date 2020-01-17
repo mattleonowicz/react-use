@@ -22,7 +22,7 @@ const useMap = <T extends object = any>(initialMap: T = {} as T): [T, Actions<T>
           [key]: entry,
         }));
       },
-      setAll: (newMap: T) => {
+      setAll: newMap => {
         set(newMap);
       },
       remove: key => {
